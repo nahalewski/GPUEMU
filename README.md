@@ -17,8 +17,8 @@ Installation
 
 To install GPUEMU on your Android device:
 
-	1.	Clone the repository:
-git clone https://github.com/yourusername/GPUEMU.git
+	1.	Clone the repository: git clone https://github.com/yourusername/GPUEMU.git
+
 	2.	Open the project in Android Studio.
 	3.	Build and run the app on your Android device.
 
