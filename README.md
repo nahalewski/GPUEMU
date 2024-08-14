@@ -46,6 +46,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Contact
 
-For any inquiries or support, please contact yourname@example.com.
+For any inquiries or support. <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'D1D011TJHV');kofiwidget2.draw();</script> 
 
 Feel free to customize the sections, especially the “Screenshots” and “Contact” sections, to better fit your project. This README provides a clear and concise overview of what your app does and how others can get started with it.
