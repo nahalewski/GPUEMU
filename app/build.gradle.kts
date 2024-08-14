@@ -68,6 +68,8 @@ dependencies {
 
     // AppCompat dependency (in case you're still using AppCompatActivity)
     implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
 
     // Testing dependencies
     testImplementation(libs.junit)

@@ -2,29 +2,55 @@ import android.app.DownloadManager
 import android.content.Context
 import android.net.Uri
 import android.os.Environment
-import androidx.compose.runtime.Composable // <-- Import for @Composable
-import androidx.compose.foundation.layout.* // <-- Import for Column, padding, etc.
-import androidx.compose.foundation.clickable // <-- Import for clickable
-import androidx.compose.material3.* // <-- Import for Material Design components
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.ui.ExperimentalComposeUiApi
 import com.naha.gpuemu.network.GithubAsset
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
-fun DriverItem(asset: GithubAsset) {
+fun DriverItem(
+    asset: GithubAsset,
+    releaseDate: String,
+    changelog: String,
+    navController: NavController
+) {
     val context = LocalContext.current
 
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)
-            .clickable {
-                startDownload(context, asset)
+            .pointerInput(Unit) {
+                detectTapGestures(
+                    onLongPress = {
+                        navController.navigate(
+                            "detail/${asset.name}/$releaseDate/$changelog"
+                        )
+                    },
+                    onTap = {
+                        startDownload(context, asset)
+                    }
+                )
             }
     ) {
-        Text(text = asset.name, style = MaterialTheme.typography.titleMedium)
-        Text(text = asset.browser_download_url, style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = asset.name,
+            style = MaterialTheme.typography.titleMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = "Released on: $releaseDate",
+            style = MaterialTheme.typography.bodySmall,
+            modifier = Modifier.fillMaxWidth()
+        )
     }
 }
 
