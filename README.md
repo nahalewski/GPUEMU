@@ -46,6 +46,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Contact
 
-For any inquiries or support.
+For any inquiries or support. [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D011TJHV)
 
 Feel free to customize the sections, especially the “Screenshots” and “Contact” sections, to better fit your project. This README provides a clear and concise overview of what your app does and how others can get started with it.
