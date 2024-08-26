@@ -12,7 +12,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.ui.ExperimentalComposeUiApi
-import com.naha.gpuemu.network.GithubAsset
+
+// Updated GithubAsset data class
+data class GithubAsset(
+    val name: String,
+    val browser_download_url: String,
+    // Add any other properties your asset might have
+)
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

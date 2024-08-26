@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Suyu Emulators",
+    "baseUrl": "https://git.suyu.dev/suyu/suyu/",
+    "apiEndpoint": "releases",
+    "type": "suyu"
+  },
+  {
+    "name": "Skyline Emulators",
+    "baseUrl": "https://archive.org/download/skyline-edge-all-versions/Skyline%20Edge%20All%20Versions/",
+    "apiEndpoint": "releases",
+    "type": "skyline"
+  },
+  {
+    "name": "Sudachi Emulators",
+    "baseUrl": "https://web.archive.org/web/20240324205216/https://github.com/sudachi-emu/sudachi/",
+    "apiEndpoint": "releases",
+    "type": "sudachi"
+  },
+  {
+    "name": "Citra Emulators",
+    "baseUrl": "https://github.com/PabloMK7/citra/",
+    "apiEndpoint": "releases",
+    "type": "citra"
+  },
+  {
+    "name": "Lime3DS Emulators",
+    "baseUrl": "https://github.com/Lime3DS/Lime3DS/",
+    "apiEndpoint": "releases",
+    "type": "lime3ds"
+  },
+  {
+    "name": "Torzu Emulator",
+    "downloadUrl": "https://ziunx.com/wp-content/uploads/2024/06/ziunx_v6.apk",
+    "type": "direct"
+  },
+  {
+    "name": "Cemu Emulator",
+    "downloadUrl": "https://www.mediafire.com/file/ya131z3q03pucie/cemu-release.apk/file",
+    "type": "direct"
+  },
+  {
+    "name": "PPSSPP Emulator",
+    "downloadUrl": "https://www.ppsspp.org/files/1_17_1/ppsspp.apk",
+    "type": "direct"
+  }
+]

@@ -1,18 +1,28 @@
 [versions]
 agp = "8.5.2"
+googleApiClientGson = "1.32.1"
+googleApiServicesDrive = "v3-rev20211004-1.32.1"
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
+library = "1.0.0"
 lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.8.0"
 composeBom = "2024.04.01"
 navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
+playServicesAuth = "21.2.0"
+playServicesDrive = "17.0.0"
+playServicesSafetynet = "18.1.0"
+media3Common = "1.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+google-api-client-android = { module = "com.google.api-client:google-api-client-android", version.ref = "googleApiClientGson" }
+google-api-client-gson = { module = "com.google.api-client:google-api-client-gson", version.ref = "googleApiClientGson" }
+google-api-services-drive = { module = "com.google.apis:google-api-services-drive", version.ref = "googleApiServicesDrive" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -28,6 +38,11 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+library = { module = "com.github.vvb2060.deviceinfo:library", version.ref = "library" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-drive = { module = "com.google.android.gms:play-services-drive", version.ref = "playServicesDrive" }
+play-services-safetynet = { group = "com.google.android.gms", name = "play-services-safetynet", version.ref = "playServicesSafetynet" }
+androidx-media3-common = { group = "androidx.media3", name = "media3-common", version.ref = "media3Common" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
